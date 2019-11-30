@@ -28,10 +28,6 @@
 (defn sumCpuLoad [hardwareMetrics]
   (reduce + (map (fn [x] (x :cpuLoad)) hardwareMetrics)))
 
-(defn average [sum count]
-  (/ (sum count)))
-
-
 (defn task11 [hardwareMetrics]
   (filter (fn [x] (> (x :cpuTemp) 2)) hardwareMetrics)
   )
