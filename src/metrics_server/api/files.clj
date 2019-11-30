@@ -42,7 +42,7 @@
           :changed (file :changed)
           :directory (file :directory)
           :executable (file :executable)
-          })))
+          }) files))
 
 ;; Метод считает средний размер файла не директории
 (defn task24 [files]
